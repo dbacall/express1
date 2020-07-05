@@ -6,10 +6,10 @@ var PostsController = {
 
     post
       .save()
-      .then((res) =>
+      .then(() =>
         res.status(200).json({ message: 'Post successfully added to database' })
       )
-      .catch((res) =>
+      .catch(() =>
         res.status(400).json({ error: 'Post could not be added to database.' })
       );
   },
